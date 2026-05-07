@@ -1,0 +1,14 @@
+.submit__btn{
+    font-family: var(--font-body);
+    width: 310px;
+    height: 60px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background: #37AEAB;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0;
+
+;
+
+}

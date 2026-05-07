@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+One&family=Fira+Sans:wght@400;600;700;800;900&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  /*max-width: 500px;
+  min-width: 375px;*/
+  margin: 0 auto;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  background-color: #FFFFFF;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Design tokens ─── */
+:root {
+  max-width: 500px;
+  min-width: 375px;
+  margin: 0 auto;
+  min-height: 100vh;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+  --font-heading: 'Sansita One', sans-serif;
+  --font-body: 'Fira Sans', sans-serif;
+  --pink: #F56B9A;
+  --white-80: #FFFFFF;
+}
+
+
+

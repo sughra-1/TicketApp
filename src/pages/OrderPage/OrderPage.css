@@ -1,0 +1,135 @@
+.orderpage__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #231F42;
+    min-height: 100vh;
+    padding: 3rem 3rem;
+}
+
+.orderpage__title{
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: italic;
+    color: #F56B9A;
+    line-height: 1;
+    font-size: clamp(32px, 8vw, 48px);
+    margin-bottom: 20px;
+
+}
+
+.orderpage__backarrow{
+   margin-top: 10px;
+   
+}
+
+.orderpage__title-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.orderpage__title{
+    margin-bottom: 0;
+}
+
+.orderpage__backarrow{
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.orderpage__empty {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 8rem;
+    justify-content: center;
+}
+
+.orderpage__list-border{
+    width: 100%;
+    border: 2px solid #F56B9A;
+    overflow: hidden;
+    margin-bottom: 15px;
+   
+}
+
+
+.orderpage__list-border 
+.quantityselector__buttons {
+    border: none;
+    border-top: 2px solid #F56B9A;
+    margin-bottom: 0;
+}
+
+.orderpage__list-border 
+.eventdetails__container {
+    align-items: flex-start;
+    padding: 0 16px;
+}
+
+.orderpage__event-info {
+    padding: 16px;
+}
+
+.orderpage__event-info 
+.eventdetail__event-name {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-weight: 700;
+    color: #F56B9A;
+    font-size: clamp(24px, 6vw, 32px);
+    margin: 0 0 4px 0;
+    text-align: left;
+}
+
+.orderpage__event-info 
+.eventdetail__event-time {
+    color: #37AEAB;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+}
+
+.orderpage__list-border 
+.quantityselector__minus-btn,
+.quantityselector__plus-btn{
+    width:100%;
+}
+
+.orderpage__list-border
+.quantityselector__plus-btn{
+    border-right: none;
+}
+
+.orderpage__list-border 
+.quantityselector__number{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.quantityselector__price-text{
+    color: #FFFFFFCC;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem;
+
+
+}
+
+.quantityselector__price-total{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--font-body);
+    text-shadow: 1px 1px 0 #F56B9A !important;
+
+
+}

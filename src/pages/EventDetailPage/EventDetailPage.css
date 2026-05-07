@@ -1,0 +1,54 @@
+.eventdetailpage__container {
+  background-color: #231F42;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem ;
+}
+
+.eventdetailpage__title-row{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.eventdetailpage__backarrow{
+   position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.eventdetailpage__title{
+  font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: italic;
+    color: #F56B9A;
+    line-height: 1;
+    font-size: clamp(30px, 8vw, 46px);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.eventdetailpage__text{
+   color: #FFFFFFCC;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-align: center;
+    gap: 4px;
+    margin-bottom: 40px;
+}
+
+.eventdetailpage__event-venue{
+  color: #FFFFFFB2;
+    font-size: 18px;
+    font-weight: 300px;
+    font-style: italic;
+    margin-top: 6px;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}

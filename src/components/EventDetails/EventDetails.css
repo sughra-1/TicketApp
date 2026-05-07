@@ -1,0 +1,50 @@
+.eventdetails__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*.eventdetaild__title{
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: italic;
+    color: #F56B9A;
+    line-height: 1;
+    font-size: clamp(32px, 8vw, 48px);
+    margin-bottom: 20px;
+
+}
+
+.eventdetail__text{
+    color: #FFFFFFCC;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-align: center;
+    gap: 4px;
+    margin-bottom: 40px;
+
+}*/
+
+.eventdetail__event-name{
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: italic;
+    color: #F56B9A;
+    line-height: 1;
+    font-size: clamp(35px, 8vw, 35px);
+    margin: 5px 0 5px 0;
+    text-align: center;
+
+}
+
+.eventdetail__event-time{
+    color: #37AEAB;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    
+
+}
+

@@ -1,0 +1,243 @@
+.receipt__container{
+    background: linear-gradient(180deg, #C96B8A 0%, #8B3F7E 45%, #231F42 100%);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.receipt__scroll-area{
+    overflow-y: auto;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.receipt__ticket-page{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 0;
+}
+
+.receipt__titleline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 14px 16px 0 16px;
+    
+}
+
+.receipt__backarrow{
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    color: #231F42;
+
+}
+
+.receipt__title{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.receipt__default-msg{
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+}
+
+.receipt__event-group{
+    width: 311px;
+    margin-bottom: 24px;
+}
+
+.receipt__group-count{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+.receipt__page{
+    background-color: #ffffff;
+    width:311px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.receipt__title-wrapper{
+    background-color: #ffffff;
+}
+
+.receipt__line{
+    color: #00000066;
+    padding: 9px 2px 4px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    height:40px;
+}
+
+.receipt__line2{
+   
+   color: #00000066;
+    padding: 9px 2px 4px 8px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.receipt__event-name{
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-weight: 400;
+    color: #F56B9A;
+    font-size: clamp(24px, 6vw, 30px);
+    text-align: left;
+    border-bottom: 1px dashed #00000066;
+    background-color: #ffffff;
+    padding: 9px 2px 15px 8px;
+}
+
+.receipt__where{
+    background: #00000008;
+    height:120px;
+
+}
+
+.receipt__event-venue{
+    color: #000000B2;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 2px 15px 8px;
+}
+
+.receipt__line3{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px dashed #00000033;
+    border-bottom: 1px dashed #00000033;
+    background: #0000000F;
+
+}
+
+.receipt__col-1,
+.receipt__col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    
+
+}
+
+.receipt__col-2{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #00000099;
+
+}
+
+.receipt__col--border{
+    border-left: 1px dashed #00000033;
+}
+
+.receipt__when,
+.receipt__from,
+.receipt__to{
+    color: #00000099;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.receipt__label{
+    color: #00000066;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.receipt__line4{
+    padding: 8px;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    background: #00000017;
+
+}
+
+.receipt__section-info{
+    color: #00000099;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.receipt__label-section{
+    margin-top: 1rem;
+}
+
+.receipt__label-seat{
+    margin-left: 10px;
+    margin-top: 1rem;
+}
+
+.receipt__section,
+.receipt__seat{
+    margin-top: 1rem;
+    margin-left: 5px;
+}
+
+.receipt__barcode-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 15px;
+    background: #0000001F;
+}
+
+.receipt__barcode {
+    font-family: "Libre Barcode 128", system-ui;
+    font-size: 80px;
+    color: #000000;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    width: 60%;
+}
+
+.receipt__barcode-id{
+    color: #00000099;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: -19px;
+    margin-bottom: 9px;
+}

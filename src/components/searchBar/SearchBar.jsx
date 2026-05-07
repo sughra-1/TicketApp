@@ -1,0 +1,20 @@
+import "./searchBar.css";
+import searchIcon from "../../assets/Frame.png";
+
+import React from 'react'
+
+export default function searchBar() {
+  return (
+    <div className= "searchbar__wrapper">
+        <div className= "searchbar__container">
+            <img src={searchIcon} alt= "search" className="searchbar__icon" />
+            <input 
+            className="searchbar__input"
+            type = "text" placeholder="sök efter event"/>
+            
+        </div>
+      
+    </div>
+  )
+}
+
