@@ -1,1 +1,5 @@
-
+In my app i used four external linbraries zustand, Motion, Phosphor icons, and UUID. 
+Zustand is a state management library. It stores data globally and any component in the app can access it. I used it in creating store and render these stores in different components to purchase tickets and generate them, managing the cart, holding selected tickets quantity, and store all events fetched from the API.   
+Motion library used for animation in my app. I used animation in event cards and for buttons to scale up and hover. This app is a mobile app and Motion library provides a smooth transition without writing complex css animations.
+Phosphor icon library has hundereds of svg icons. I used icons from this library and render them directly with props for size and color.I used it in header for shoppping cart icon, receipt icon and back arrow icon. Instead of loading images in assets i used them and rendered them directly in the code. 
+UUID generated unique identifiers and generate random IDs. I used it in useTicketStore.js to generate unique ticket IDs. It helped in generating five character long IDs with uppercase for each ticket. I used this because it generates a random unique value every time and no two tickets will have same id.
