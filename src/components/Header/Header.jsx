@@ -7,12 +7,12 @@ export default function Header() {
 
   return (
     <div className="header__container">
-        <div className="header__shoppingcart" onClick={() => navigate("/order")}>
+        <button className="header__shoppingcart" onClick={() => navigate("/order")} aria-label="Gå till varukorg">
           <ShoppingCart size={38} color="#ffffff" />
-        </div>
-        <div className="header__ticket" onClick={() => navigate("/tickets")}>
+        </button>
+        <button className="header__ticket" onClick={() => navigate("/tickets")} aria-label="Gå till mina biljetter">
           <Ticket size={38} color="#ffffff" />
-        </div>
+        </button>
     </div>
   )
 }

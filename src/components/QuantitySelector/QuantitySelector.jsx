@@ -15,11 +15,11 @@ export default function QuantitySelector({ showPrice = true }) {
           <p className="quantityselector__price">{totalPrice} sek</p>
         )}
         <div className="quantityselector__buttons">
-            <button className="quantityselector__minus-btn" onClick={decrement}>
+            <button className="quantityselector__minus-btn" onClick={decrement} aria-label="Minska antal">
                     <Minus size={40}/>
             </button>
-            <p className="quantityselector__number">{count}</p>
-            <button className="quantityselector__plus-btn" onClick={increment}>
+            <p className="quantityselector__number" aria-live="polite" aria-label={`Antal: ${count}`}>{count}</p>
+            <button className="quantityselector__plus-btn" onClick={increment} aria-label="Öka antal">
                     <Plus size={40}/>
             </button>
         </div>

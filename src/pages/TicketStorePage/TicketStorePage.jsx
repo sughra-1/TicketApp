@@ -10,9 +10,9 @@ export default function TicketStorePage() {
   return (
     <div className="receipt__container">
       <div className="receipt__titleline">
-        <div className="receipt__backarrow" onClick={() => navigate("/events")}>
+        <button className="receipt__backarrow" onClick={() => navigate("/events")} aria-label="Gå tillbaka till events">
           <ArrowLeft size={38} color="#ffffff" />
-        </div>
+        </button>
         <h2 className="receipt__title">Bekräftade biljetter</h2>
       </div>
 
@@ -22,8 +22,9 @@ export default function TicketStorePage() {
       ) : (
         tickets.map((ticket) => {
           const { event } = ticket;
-          const [day, monthSv] = event.when.date.split(' ');
-          const month = monthSv.slice(0, 3).toUpperCase();
+          const dateParts = event.when?.date?.split(' ') ?? [];
+          const day = dateParts[0] ?? '';
+          const month = (dateParts[1] ?? '').slice(0, 3).toUpperCase();
 
           return (
             <div key={ticket.id} className="receipt__ticket-page">

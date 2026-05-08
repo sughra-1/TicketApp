@@ -24,9 +24,9 @@ export default function OrderPage() {
   return (
     <div className="orderpage__container">
       <div className="orderpage__title-row">
-        <div className="orderpage__backarrow" onClick={() => navigate("/events")}>
+        <button className="orderpage__backarrow" onClick={() => navigate("/events")} aria-label="Gå tillbaka till events">
           <ArrowLeft size={38} color="#ffffff" />
-        </div>
+        </button>
         <h2 className="orderpage__title">order</h2>
       </div>
 
@@ -35,8 +35,9 @@ export default function OrderPage() {
       ) : (
         <>
           {cartEvents.map(({ event, count }) => {
-            const [day, monthSv] = event.when.date.split(' ');
-            const month = monthSv.slice(0, 3).toUpperCase();
+            const dateParts = event.when?.date?.split(' ') ?? [];
+            const day = dateParts[0] ?? '';
+            const month = (dateParts[1] ?? '').slice(0, 3).toUpperCase();
 
             return (
               <div key={event.id} className="orderpage__list-border">

@@ -17,9 +17,9 @@ export default function EventDetailPage() {
   return (
     <div className="eventdetailpage__container">
     <div className="eventdetailpage__title-row">
-        <div className="eventdetailpage__backarrow" onClick={() => navigate("/events")}>
+        <button className="eventdetailpage__backarrow" onClick={() => navigate("/events")} aria-label="Gå tillbaka till events">
           <ArrowLeft size={38} color="#ffffff" />
-        </div>
+        </button>
         <h1 className="eventdetailpage__title">Event</h1>
       </div>
       {/* <div>
